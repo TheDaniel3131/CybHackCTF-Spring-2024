@@ -1,0 +1,87 @@
+
+lets_do_this:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+08049000 <_start>:
+ 8049000:	b8 05 00 00 00       	mov    $0x5,%eax
+ 8049005:	bb a2 a0 04 08       	mov    $0x804a0a2,%ebx
+ 804900a:	b9 00 00 00 00       	mov    $0x0,%ecx
+ 804900f:	cd 80                	int    $0x80
+ 8049011:	89 c7                	mov    %eax,%edi
+ 8049013:	b8 03 00 00 00       	mov    $0x3,%eax
+ 8049018:	89 fb                	mov    %edi,%ebx
+ 804901a:	b9 b8 a0 04 08       	mov    $0x804a0b8,%ecx
+ 804901f:	ba 1d 00 00 00       	mov    $0x1d,%edx
+ 8049024:	cd 80                	int    $0x80
+ 8049026:	b8 b8 a0 04 08       	mov    $0x804a0b8,%eax
+ 804902b:	bb 00 a0 04 08       	mov    $0x804a000,%ebx
+
+08049030 <something_doing>:
+ 8049030:	8a 08                	mov    (%eax),%cl
+ 8049032:	8a 13                	mov    (%ebx),%dl
+ 8049034:	30 d1                	xor    %dl,%cl
+ 8049036:	88 88 6a ff ff ff    	mov    %cl,-0x96(%eax)
+ 804903c:	40                   	inc    %eax
+ 804903d:	43                   	inc    %ebx
+ 804903e:	80 38 00             	cmpb   $0x0,(%eax)
+ 8049041:	75 ed                	jne    8049030 <something_doing>
+ 8049043:	bb 00 a0 04 08       	mov    $0x804a000,%ebx
+ 8049048:	b8 08 00 00 00       	mov    $0x8,%eax
+ 804904d:	bb ab a0 04 08       	mov    $0x804a0ab,%ebx
+ 8049052:	b9 b6 01 00 00       	mov    $0x1b6,%ecx
+ 8049057:	cd 80                	int    $0x80
+ 8049059:	89 c7                	mov    %eax,%edi
+ 804905b:	b8 04 00 00 00       	mov    $0x4,%eax
+ 8049060:	89 fb                	mov    %edi,%ebx
+ 8049062:	b9 22 a0 04 08       	mov    $0x804a022,%ecx
+ 8049067:	ba 1d 00 00 00       	mov    $0x1d,%edx
+ 804906c:	cd 80                	int    $0x80
+ 804906e:	b8 06 00 00 00       	mov    $0x6,%eax
+ 8049073:	89 fb                	mov    %edi,%ebx
+ 8049075:	cd 80                	int    $0x80
+ 8049077:	b8 06 00 00 00       	mov    $0x6,%eax
+ 804907c:	89 fb                	mov    %edi,%ebx
+ 804907e:	cd 80                	int    $0x80
+ 8049080:	b8 01 00 00 00       	mov    $0x1,%eax
+ 8049085:	31 db                	xor    %ebx,%ebx
+ 8049087:	cd 80                	int    $0x80
+
+Disassembly of section .data:
+
+0804a000 <key>:
+ 804a000:	6b 78 63 74          	imul   $0x74,0x63(%eax),%edi
+ 804a004:	66 7b 74             	data16 jnp 804a07b <result+0x59>
+ 804a007:	68 31 73 5f 31       	push   $0x315f7331
+ 804a00c:	73 5f                	jae    804a06d <result+0x4b>
+ 804a00e:	66 6c                	data16 insb (%dx),%es:(%edi)
+ 804a010:	61                   	popa   
+ 804a011:	67 5f                	addr16 pop %edi
+ 804a013:	30 6b 65             	xor    %ch,0x65(%ebx)
+ 804a016:	79 5f                	jns    804a077 <result+0x55>
+ 804a018:	30 66 63             	xor    %ah,0x63(%esi)
+ 804a01b:	6f                   	outsl  %ds:(%esi),(%dx)
+ 804a01c:	75 72                	jne    804a090 <result+0x6e>
+ 804a01e:	73 33                	jae    804a053 <result+0x31>
+ 804a020:	7d 00                	jge    804a022 <result>
+
+0804a022 <result>:
+	...
+
+0804a0a2 <filename_in>:
+ 804a0a2:	66 6c                	data16 insb (%dx),%es:(%edi)
+ 804a0a4:	61                   	popa   
+ 804a0a5:	67 2e 74 78          	addr16 je,pn 804a121 <buffer+0x69>
+ 804a0a9:	74 00                	je     804a0ab <filename_out>
+
+0804a0ab <filename_out>:
+ 804a0ab:	66 6c                	data16 insb (%dx),%es:(%edi)
+ 804a0ad:	61                   	popa   
+ 804a0ae:	67 2e 74 78          	addr16 je,pn 804a12a <buffer+0x72>
+ 804a0b2:	74 2e                	je     804a0e2 <buffer+0x2a>
+ 804a0b4:	65 6e                	outsb  %gs:(%esi),(%dx)
+ 804a0b6:	63 00                	arpl   %ax,(%eax)
+
+0804a0b8 <buffer>:
+	...
