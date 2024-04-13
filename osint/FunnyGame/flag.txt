@@ -1,0 +1,17 @@
+translated:
+
+On what date was this match played? (Moscow time) Flag format: kxctf{01_01_1970}
+
+view image.jpg
+
+https://lens.google.com/search?ep=gisbubb&hl=en-MY&re=df&p=AbrfA8ovx5BSZi2jiL143YNbtR50auhODrSYqNVLFYB683zHEbCQE4MP_wx1LhokQF58DHy4NqIvcqlJxiGO8pOaKy6ezVlOVema3v8YkbGmkLSGVAa--MWWqJ5rmK6c7s4_bF5ZnK5oLBKBnMEmpDXZ8j7AcbHdAsiFq1qLGFt1ig86vK4mH6L0GjXnjX5AVz2TfpWr3GOhuU-CC97b9p71Kyc3khLCQ1scul2WQTBf0XJ5HRzm6gtz0O0Ih-PdVioi6kM8sbz918_pEkXzfjeVjLfpPGd-efivjqq47MxDv6VS6B8rR-n1mo51BFQv1Fcu00nSymQ-G03LQLZPWIcc6WsHtFfrfsAbnIdJfxiI_AbtwNrgWQmvTqYpFqGrUL_exHsTlUIWRzEe0J-TlVqtDxUfSwlC#lns=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIkVrY0tKR1l6TnpFd09HTTJMVEl3WXpNdE5HUTVNaTA1TnpoakxXTmlNVFE0T0RZeVpEaGpOQklmU1RnNGRuaE9ZbkV5ZWsxUk9FZHRjM3A0VFdaRGJIVkllRk4wZURkU1p3PT0iLG51bGwsbnVsbCxudWxsLDEsbnVsbCxbbnVsbCxudWxsLFswLDAsMTAwMDAwLDEwMDAwMF1dXQ==
+https://www.youtube.com/watch?v=Qls04-4CF0k&ab_channel=OGDota2Team
+
+flag: kxctf{26_08_2018}
+
+
+how do I solve?
+
+the image provided the famous dota 2 player, ana. So I just tracked his past matches. The second thing I noticed is the match length. Usually 55 mins is lengthy for a dota 2 game. Also, it must be a very long game. Then I just focus on finding the matches where he participated in The Internationals.
+
+https://liquipedia.net/dota2/Ana/Results
