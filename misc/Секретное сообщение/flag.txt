@@ -1,0 +1,7 @@
+I use cyberchef to check file type because the challenge said it is encrypted.
+
+Checked and realized its a .wav audio file (RIFFH Wave)
+
+so I converted it to .wav and when I played, it sounded like morse code so I dragged it to https://morsecode.world/international/decoder/audio-decoder-adaptive.html
+
+flag: kxctf{m0rs3c0d31ss0e4syt0und3rtand}
