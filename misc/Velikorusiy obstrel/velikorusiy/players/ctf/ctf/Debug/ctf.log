@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\Project_2024\CybHackCTF-Spring-2024\misc\Velikorusiy obstrel\velikorusiy\players\ctf\ctf\main.cpp(13,23): warning C4018: '<': signed/unsigned mismatch
+D:\Project_2024\CybHackCTF-Spring-2024\misc\Velikorusiy obstrel\velikorusiy\players\ctf\ctf\main.cpp(25,23): warning C4018: '<': signed/unsigned mismatch
+  ctf.vcxproj -> D:\Project_2024\CybHackCTF-Spring-2024\misc\Velikorusiy obstrel\velikorusiy\players\ctf\Debug\ctf.exe

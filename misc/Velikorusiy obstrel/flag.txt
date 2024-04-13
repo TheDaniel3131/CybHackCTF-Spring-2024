@@ -1,0 +1,3 @@
+flag: kxctf{y4sh3ri_p4l1_sl4vy4n3_vp3r3d}
+
+the C++ and h codes are in russian mostly and some english. So a simple translation and fix will solve the problem. Make sure debugging it in Visual Studio. If there are errors, try debugging and ask GPT.
